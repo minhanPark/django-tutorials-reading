@@ -1,0 +1,11 @@
+{% extends 'reading/base.html' %}
+
+{% block content %}
+<h1>책 리스트 보기</h1>
+{% for book in object_list %}
+    <h3 class="book-header">{{ book.name }} -- {{ book.author}}</h3>
+    {% for content in book.wisesaying_set.all %}
+        <div class="book-content"><a href="{% url 'reading:detail' content.pk %}" class="link">{{ content|truncatechars:30 }}</a></div>
+    {% endfor%}
+{% endfor %}
+{% endblock %}

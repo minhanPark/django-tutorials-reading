@@ -1,0 +1,6 @@
+{% extends 'reading/base.html' %}
+
+{% block content %}
+<h3 class="book-header">{{ object.book.name }} -- {{ object.book.author}}</h3>
+<p>{{ object.text }}</p>
+{% endblock %}

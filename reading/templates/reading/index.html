@@ -1,0 +1,7 @@
+{% extends 'reading/base.html' %}
+
+{% block content %}
+<h1>안녕하세요</h1>
+<p><span class="span-text">{{data.book_num}}</span>권의 책과 <span class="span-text">{{data.Wisesaying_num}}</span>개의 글귀가 있습니다.</p>
+<div><a href="{% url 'reading:list' %}"  class="link">보러가기</a></div>
+{% endblock %}
