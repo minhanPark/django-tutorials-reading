@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2f$lnbz1kx!s9quqy(-g8lyw538ki7x@n=k@-8xs6lj^q^o_lq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['runningwater2.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
